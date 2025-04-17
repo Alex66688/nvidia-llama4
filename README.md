@@ -1,4 +1,4 @@
-# @alex66688/nvidia-llama4
+# @rexdug7005/nvidia-llama4
 
 Esta biblioteca permite integrar modelos de NVIDIA Llama4 con el ecosistema de LangChain.js, facilitando el uso de modelos como Llama4 de Meta en aplicaciones de procesamiento de lenguaje natural.
 
@@ -9,9 +9,9 @@ Esta biblioteca permite integrar modelos de NVIDIA Llama4 con el ecosistema de L
 ## Instalación
 
 ```bash
-npm install @alex66688/nvidia-llama4 
-yarn add @alex66688/nvidia-llama4 
-pnpm add @alex66688/nvidia-llama4 
+npm install @rexdug7005/nvidia-llama4 
+yarn add @rexdug7005/nvidia-llama4 
+pnpm add @rexdug7005/nvidia-llama4 
 ```
 
 ## Requisitos
@@ -22,7 +22,7 @@ pnpm add @alex66688/nvidia-llama4
 ## Modelos de Chat
 
 ```typescript
-import { ChatNvidiaLlama4, ChatNvidiaLlama4Input, ChatNvidiaLlama4CallOptions } from "@alex66688/nvidia-llama4";
+import { ChatNvidiaLlama4, ChatNvidiaLlama4Input, ChatNvidiaLlama4CallOptions } from "@rexdug7005/nvidia-llama4";
 
 // Creación del modelo de chat
 const chatModel = new ChatNvidiaLlama4({
@@ -53,7 +53,7 @@ for await (const chunk of stream) {
 ## Modelos de Lenguaje (LLMs)
 
 ```typescript
-import { NvidiaLlama4, NvidiaLlama4Input, NvidiaLlama4CallOptions } from "@alex66688/nvidia-llama4";
+import { NvidiaLlama4, NvidiaLlama4Input, NvidiaLlama4CallOptions } from "@rexdug7005/nvidia-llama4";
 
 // Creación del modelo de texto
 const llm = new NvidiaLlama4({
@@ -80,7 +80,7 @@ for await (const chunk of await llm.stream("Escribe un poema sobre la tecnologí
 ## Embeddings
 
 ```typescript
-import { NvidiaEmbeddings, NvidiaEmbeddingsParams } from "@alex66688/nvidia-llama4";
+import { NvidiaEmbeddings, NvidiaEmbeddingsParams } from "@rexdug7005/nvidia-llama4";
 
 // Creación del modelo de embeddings
 const embeddings = new NvidiaEmbeddings({
@@ -103,7 +103,7 @@ const vectoresDocumentos = await embeddings.embedDocuments(documentos);
 ## Integración con LangChain
 
 ```typescript
-import { ChatNvidiaLlama4 } from '@alex66688/nvidia-llama4';
+import { ChatNvidiaLlama4 } from '@rexdug7005/nvidia-llama4';
 import { PromptTemplate } from '@langchain/core/prompts';
 import { StringOutputParser } from '@langchain/core/output_parsers';
 import { RunnableSequence } from '@langchain/core/runnables';
