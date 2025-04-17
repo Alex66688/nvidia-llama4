@@ -1,5 +1,5 @@
 {
-  "name": "@alex66688/nvidia-llama4",
+  "name": "@rexdug7005/nvidia-llama4",
   "version": "0.2.0",
   "description": "Integración de NVIDIA Llama4 con LangChain.js",
   "type": "module",
@@ -46,7 +46,7 @@
     "ai",
     "llm"
   ],
-  "author": "Alex66688",
+  "author": "rexdug7005",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0",
